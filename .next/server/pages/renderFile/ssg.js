@@ -61,7 +61,8 @@ const getStaticProps = async ()=>{
     return {
         props: {
             dateTime: res.data.datetime
-        }
+        },
+        revalidate: 10
     };
 };
 

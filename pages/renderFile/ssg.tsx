@@ -14,5 +14,6 @@ export const getStaticProps = async () => {
   console.log("props");
   return {
     props: { dateTime: res.data.datetime },
+    revalidate: 10,
   };
 };
