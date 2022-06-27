@@ -2,12 +2,12 @@ import axios from "axios";
 import TimeSection from "../../components/TimeSection";
 
 export default function SSRPage({ dateTime }) {
-  const splittingTime = dateTime.split("T");
-  const time = splittingTime[1].substring(0, 8);
-  console.log(time);
+  // const splittingTime = dateTime.split("T");
+  // const time = splittingTime[1].substring(0, 8);
+  console.log(dateTime);
   return (
     <main>
-      <TimeSection dateTime={time} />
+      <TimeSection dateTime={dateTime} />
     </main>
   );
 }
